@@ -21,6 +21,28 @@ export function Home() {
     { icon: Award, title: '2+ Years', desc: 'Industry experience' },
   ];
 
+  const blogs = [
+    {
+      title: 'Why Quality Sand Matters in Construction',
+      excerpt:
+        'Using the right type of sand improves strength, durability, and safety in construction projects.',
+      date: '12 Aug 2025',
+    },
+    {
+      title: 'River Sand vs Crushed Sand',
+      excerpt:
+        'Understand the difference between river sand and crushed sand and when to use each.',
+      date: '05 Aug 2025',
+    },
+    {
+      title: 'How Fast Delivery Saves Your Project Time',
+      excerpt:
+        'Delays cost money. Here’s how reliable material delivery keeps your project on track.',
+      date: '29 Jul 2025',
+    },
+  ];
+  
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -77,14 +99,29 @@ export function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="cta">
-        <div className="container text-center">
-          <h2>Ready to Start Your Project?</h2>
-          <p>Contact us today for a free quote and consultation</p>
-          <Link to="/contact" className="btn-yellow">Contact Us Now</Link>
+     {/* Blog Section */}
+<section className="blog">
+  <div className="container">
+    <h2>Latest From Our Blog</h2>
+    <p className="blog-intro">
+      Tips, insights, and updates from the sand & construction industry
+    </p>
+
+    <div className="grid-3">
+      {blogs.map((blog, idx) => (
+        <div key={idx} className="blog-card">
+          <span className="blog-date">{blog.date}</span>
+          <h3>{blog.title}</h3>
+          <p>{blog.excerpt}</p>
+          <Link to="/blog" className="blog-link">
+            Read More
+          </Link>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }
