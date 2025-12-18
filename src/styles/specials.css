@@ -1,0 +1,238 @@
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header Section */
+.header-section {
+  padding: 6rem 1rem;
+  background: linear-gradient(135deg, #FFD700, #F5DEB3);
+  text-align: center;
+  border-radius: 0 0 50% 50% / 0 0 15% 15%;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+.header-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+.header-section p {
+  font-size: 1.25rem;
+  color: #444;
+}
+
+/* Section Titles */
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+.section-title h2 {
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: 700;
+}
+.icon-star, .icon-trending {
+  width: 2rem;
+  height: 2rem;
+  color: #FFD700;
+}
+
+/* Grid Layouts */
+.grid {
+  display: grid;
+  gap: 2.5rem;
+}
+.featured-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.all-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Special Cards */
+.special-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 2rem 1.5rem 1.5rem;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.special-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+}
+
+/* Featured Cards */
+.featured-card {
+  background: linear-gradient(135deg, #FFD700, #F5DEB3);
+  border: 2px solid #222;
+}
+
+/* Discount Ribbon */
+.discount {
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+  background: black;
+  color: #FFD700;
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transform: rotate(-15deg);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+/* All Card Discount Box */
+.discount-box {
+  background: #FFD700;
+  border: 2px solid black;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 1rem;
+  text-align: center;
+  flex-shrink: 0;
+  min-width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Special Info */
+.special-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+.special-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+/* Valid Until */
+.valid-until {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+.icon-clock {
+  color: black;
+}
+
+/* Tag Icon */
+.tag-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.icon-tag {
+  width: 1rem;
+  height: 1rem;
+  color: black;
+}
+
+/* Buttons */
+.btn-learn {
+  width: 100%;
+  padding: 0.75rem;
+  background: black;
+  color: #FFD700;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-learn:hover {
+  background: #FFD700;
+  color: black;
+}
+
+/* Terms Section */
+.terms-section {
+  padding: 4rem 1rem;
+  background-color: #f5f0e1;
+}
+.terms-box {
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+.terms-box h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.terms-box li {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+.terms-box li::before {
+  content: '•';
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 4rem 1rem;
+  background-color: black;
+  color: #FFD700;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+}
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.cta-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.btn-cta {
+  background-color: #FFD700;
+  color: black;
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.btn-cta:hover {
+  background-color: #eab308;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .all-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .discount-box {
+    margin-bottom: 1rem;
+  }
+  .discount {
+    font-size: 1rem;
+    top: 0.5rem;
+    left: -0.5rem;
+  }
+}
