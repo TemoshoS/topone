@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-import { Truck, Clock, Award } from 'lucide-react';
 import '../styles/home.css';
 
 import heroImage from '../assets/sand truck.jpeg';
@@ -15,11 +14,7 @@ export function Home() {
     { title: 'Gravel Mix', desc: 'Premium gravel mix for landscaping and drainage solutions', image: sandgr },
   ];
 
-  const quickLinks = [
-    { icon: Truck, title: 'Fast Delivery', desc: 'Same-day delivery available' },
-    { icon: Clock, title: '24/7 Service', desc: 'Round the clock support' },
-    { icon: Award, title: '2+ Years', desc: 'Industry experience' },
-  ];
+  
 
   const blogs = [
     {
@@ -62,23 +57,6 @@ export function Home() {
         </div>
       </section>
 
-      {/* Quick Links Section */}
-      <section className="quick-links">
-        <div className="container">
-          <div className="grid-4">
-            {quickLinks.map((item, idx) => {
-              const Icon = item.icon;
-              return (
-                <div key={idx} className="quick-card">
-                  <Icon className="quick-icon" />
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* Featured Products */}
       <section className="products">

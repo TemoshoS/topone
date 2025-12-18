@@ -77,7 +77,7 @@ export function Services() {
                 </ul>
                 <div className="product-footer">
                   <span className="price">{product.price}</span>
-                  <button className="order-btn">Order Now</button>
+                  
                 </div>
               </div>
             ))}
@@ -85,14 +85,7 @@ export function Services() {
         </div>
       </section>
 
-      {/* Special Offers Banner */}
-      <section className="special-offers">
-        <div className="container text-center">
-          <h2>Special Offers!</h2>
-          <p>Save on bulk orders and seasonal promotions</p>
-          <a href="/specials" className="special-link">View Specials</a>
-        </div>
-      </section>
+      
 
       {/* Additional Services */}
       <section className="additional-services">
