@@ -51,7 +51,72 @@ nav {
   .nav-links li a:hover {
     color: #FFD700; /* yellow */
   }
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #FFD700; /* yellow on hover */
+  }
+  
+  /* Active link */
+  .nav-links li a.active {
+    color: #FFD700; /* yellow when active */
+    font-weight: bold;
+  }
+  
   body, .app {
     padding-top: 40px; 
   }
-  
+  /* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger open state (turn into X) */
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px; /* below nav */
+    left: 0;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    max-height: 300px; /* enough to show all links */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
