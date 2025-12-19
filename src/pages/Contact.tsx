@@ -138,7 +138,7 @@ export function Contact() {
         <div className="container text-center">
           <h2>Need Immediate Assistance?</h2>
           <p>Call us now for urgent orders and emergency deliveries</p>
-          <a href="tel:5551234567" className="cta-button">+27131705511</a>
+          <a href="tel:0131705511" className="cta-button">+27131705511</a>
         </div>
       </section>
     </div>
