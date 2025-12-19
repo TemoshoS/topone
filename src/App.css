@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
 
 /* Base & Reset */
 body, html, #root, .app {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', Arial, sans-serif; /* Body font */
+  font-family: 'Montserrat', Arial, sans-serif;; /* Body font */
   background-color: #f5f0e1;
   color: #222;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', Arial, sans-serif; /* Headings font */
+  font-family: 'Montserrat', Arial, sans-serif;; /* Headings font */
   color: #222;
   margin-bottom: 1rem;
 }
